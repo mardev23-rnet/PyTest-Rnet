@@ -11,6 +11,10 @@ class LoginPage(BasePage):
   warning_message = (By.CSS_SELECTOR, "#account-login .alert-danger")
 
   def __init__(self, driver):
+    """
+
+    :rtype: object
+    """
     super().__init__(driver)
 
   def set_email_address(self, email_address):
